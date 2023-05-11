@@ -35,7 +35,7 @@ window.onmouseup= () =>{
     track.dataset.prevPercentage = track.dataset.percentage;    
 }
 
-const letters = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890"
+const letters = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%^&*(){}:<>?,./;'[]|";
 let interval = null;
 
 document.querySelector("h1").onmouseover = event =>{
