@@ -35,7 +35,7 @@ window.onmouseup= () =>{
     track.dataset.prevPercentage = track.dataset.percentage;    
 }
 
-const letters = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%^&*(){}:<>?,./;'[]|";
+const letters = "QWERTYUIOPASDFGHJKLZXCVBNM";
 let interval = null;
 
 document.querySelector("h1").onmouseover = event =>{
@@ -49,7 +49,7 @@ document.querySelector("h1").onmouseover = event =>{
             if(index < iterations){
                 return event.target.dataset.value[index];
             }
-            return letters[Math.floor(Math.random() * 26)];
+            return letters[Math.floor(Math.random() * letters.length)];
 
         }).join("");
 
